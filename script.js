@@ -3,7 +3,6 @@ function run(size) {
 
   const grid = document.createElement("div");
   grid.classList.add("wrapper");
-  grid.style.cssText = "grid-auto-rows: minmax(100px, auto);"
 
   for (let i = 0; i < (size*size); i++) {
     const cell = document.createElement("div");
@@ -14,7 +13,7 @@ function run(size) {
   }
 
   content.appendChild(grid);
-  grid.style.cssText = "background-color: black; color:white;"
+  grid.style.cssText = `background-color: black; color:white; grid-template-columns: repeat(${size}, 1fr);`
 
   const cells = document.querySelectorAll("#cell");
 
