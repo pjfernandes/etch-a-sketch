@@ -40,3 +40,20 @@ body {
   transition: 1s;
   cursor: pointer;
 }
+
+footer {
+  color: rgb(240, 176, 14);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer > a {
+  color: rgb(240, 176, 14);
+  text-decoration: none;
+}
+
+footer > a:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 254);
+}
